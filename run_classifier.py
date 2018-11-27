@@ -374,7 +374,7 @@ class CompanyProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    return [str(i) for i in range(10)]
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
